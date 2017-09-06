@@ -1,28 +1,27 @@
 package com.agilesolutions.test.service;
 
+import com.agilesolutions.test.exception.BadRequestException;
 import com.agilesolutions.test.exception.ResourceNotFoundException;
 import com.agilesolutions.test.model.ToDo;
 import com.agilesolutions.test.repository.ToDoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
 public class ToDoService {
-    private LoggerManager logger = LoggerManager.getInstance();
     @Autowired
     private ToDoRepository toDoRepository;
 
-    public List<ToDo> findAll(Optional<String> optionalName, Optional<String> optionalDesc) {
-        List<ToDo> todoList = new ArrayList<>();
+    public List<ToDo> findAll() {
+        return this.toDoRepository.findAll();
+    }
 
-        this.toDoRepository
-                .findAll()
-                .forEach(todoList::add);
+    public List<ToDo> find(Optional<String> optionalName, Optional<String> optionalDesc) {
+        List<ToDo> todoList = this.toDoRepository.findAll();
 
         if(optionalName.isPresent()) {
             String name = optionalName.get().toLowerCase();
@@ -41,39 +40,33 @@ public class ToDoService {
         return todoList;
     }
 
-    public ToDo findOne(Long id) {
-        return this.toDoRepository.findOne(id);
+    public ToDo findById(Long id) throws ResourceNotFoundException {
+        ToDo todo = this.toDoRepository.findOne(id);
+        if(todo == null) {
+            throw new ResourceNotFoundException("ToDo", id);
+        }
+
+        return todo;
     }
 
-    public ToDo create(ToDo toDo) {
-        if(toDo.getDescription() == null) {
-            toDo.setDescription("");
+    public ToDo save(ToDo toDo) throws BadRequestException {
+        if (toDo.getName() == null || toDo.getName().isEmpty()) {
+            throw new BadRequestException("ToDo List", "Required Field: name");
         }
 
-        this.toDoRepository.save(toDo);
-        return toDo;
+        return this.toDoRepository.save(toDo);
     }
 
-    public ToDo update(Long id, ToDo toDo) throws ResourceNotFoundException {
-        ToDo t = this.toDoRepository.findOne(id);
+    public ToDo update(Long id, ToDo updatedTodo) throws ResourceNotFoundException {
+        ToDo existentTodo = this.findById(id);
+        existentTodo.setName(updatedTodo.getName());
+        existentTodo.setDescription(updatedTodo.getDescription());
 
-        if(t == null) {
-            throw new ResourceNotFoundException("ToDo");
-        }
-
-        if(!toDo.getName().isEmpty()) {
-            t.setName(toDo.getName());
-        }
-
-        if(!toDo.getDescription().isEmpty()) {
-            t.setDescription(toDo.getDescription());
-        }
-
-        this.toDoRepository.save(t);
-        return t;
+        return this.toDoRepository.save(existentTodo);
     }
 
-    public void delete(Long id) {
+    public Long delete(Long id) {
         this.toDoRepository.delete(id);
+        return id;
     }
 }

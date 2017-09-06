@@ -1,6 +1,6 @@
 package com.agilesolutions.test.repository;
 
 import com.agilesolutions.test.model.ToDo;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ToDoRepository extends CrudRepository<ToDo, Long> { }
+public interface ToDoRepository extends JpaRepository<ToDo, Long> { }
