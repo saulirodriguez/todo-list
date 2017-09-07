@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a90d37d-10b9-4975-9316-ff947fee9e4f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b9ff5e557992733210df57acfa7d339de067578" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/805b18c04de5b6881065d253aa20f6d7b10afec7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a404b5a2594e2ea8cbeb262cbe9e644723482cf2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfb9a67d11336521df41f6fd60839cc4cba6744e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eafb244fc1c98b3ea0904c0e6a7208ee2e59a139" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/config/AppConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/entity/AbstractBaseEntity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/entity/Task.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/utils/Seeder.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/config/AppConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/utils/Seeder.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab512d97b9bc27334b0742d698b4969b33a77e45" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/service/Seeder.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/model/AbstractBaseEntity.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/model/Task.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/model/ToDo.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/service/Seeder.class" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/model/AbstractBaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/entity/AbstractBaseEntity.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/model/Task.java" afterPath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/entity/Task.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/model/ToDo.java" afterPath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/entity/ToDo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/service/Seeder.java" afterPath="$PROJECT_DIR$/src/main/java/com/agilesolutions/test/utils/Seeder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/model/ToDo.class" afterPath="$PROJECT_DIR$/target/classes/com/agilesolutions/test/entity/ToDo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/787d961f5c17d4572aef9c743c531529b5694969" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/787d961f5c17d4572aef9c743c531529b5694969" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d18bd71b4e9ad2a7f44bb8428ec5a80ef70f4822" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d18bd71b4e9ad2a7f44bb8428ec5a80ef70f4822" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
@@ -1050,14 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/agilesolutions/test/TaskServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="86" column="38" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/agilesolutions/test/service/TaskService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1102,6 +1104,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/agilesolutions/test/TaskServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="76" column="25" lean-forward="true" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
           <folding />
         </state>
       </provider>
