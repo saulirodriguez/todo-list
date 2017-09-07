@@ -2,7 +2,7 @@ package com.agilesolutions.test;
 
 import com.agilesolutions.test.exception.BadRequestException;
 import com.agilesolutions.test.exception.ResourceNotFoundException;
-import com.agilesolutions.test.model.ToDo;
+import com.agilesolutions.test.entity.ToDo;
 import com.agilesolutions.test.repository.ToDoRepository;
 import com.agilesolutions.test.service.ToDoService;
 

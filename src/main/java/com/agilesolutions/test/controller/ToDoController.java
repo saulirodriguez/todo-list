@@ -2,13 +2,13 @@ package com.agilesolutions.test.controller;
 
 import com.agilesolutions.test.exception.BadRequestException;
 import com.agilesolutions.test.exception.ResourceNotFoundException;
-import com.agilesolutions.test.model.ToDo;
+import com.agilesolutions.test.entity.ToDo;
 import com.agilesolutions.test.service.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;

@@ -2,8 +2,8 @@ package com.agilesolutions.test;
 
 import com.agilesolutions.test.exception.BadRequestException;
 import com.agilesolutions.test.exception.ResourceNotFoundException;
-import com.agilesolutions.test.model.Task;
-import com.agilesolutions.test.model.ToDo;
+import com.agilesolutions.test.entity.Task;
+import com.agilesolutions.test.entity.ToDo;
 import com.agilesolutions.test.repository.TaskRepository;
 import com.agilesolutions.test.repository.ToDoRepository;
 import com.agilesolutions.test.service.TaskService;
@@ -89,7 +89,7 @@ public class TaskServiceTest {
 
     @Test
     public void findAllShouldGetAllTasksByToDoList() {
-        List<Task> found = taskService.findAll(todoList.getId());
+        List<Task> found = taskService.findByOwnerId(todoList.getId());
 
         assertThat(found.size())
                 .isEqualTo(5);
@@ -97,7 +97,7 @@ public class TaskServiceTest {
 
     @Test
     public void findAllShouldGetEmptyArrayWhenNoToDoListFound() {
-        List<Task> found = taskService.findAll((long) 2);
+        List<Task> found = taskService.findByOwnerId((long) 2);
 
         assertThat(found.size())
                 .isEqualTo(0);

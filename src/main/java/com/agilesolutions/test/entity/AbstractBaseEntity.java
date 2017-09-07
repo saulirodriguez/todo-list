@@ -1,4 +1,4 @@
-package com.agilesolutions.test.model;
+package com.agilesolutions.test.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -15,13 +15,13 @@ import javax.persistence.*;
 @MappedSuperclass
 public abstract class AbstractBaseEntity {
     @Id
-    @JsonProperty
+    @JsonProperty("id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column
-    @JsonProperty
+    @JsonProperty("name")
     private String name;
     @Column
-    @JsonProperty
+    @JsonProperty("description")
     private String description;
 }

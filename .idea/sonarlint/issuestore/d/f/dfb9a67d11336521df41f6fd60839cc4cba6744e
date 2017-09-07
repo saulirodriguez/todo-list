@@ -1,0 +1,10 @@
+
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡ÄØöûÿÿÿÿ
+Ssquid:S1068"2Remove this unused "taskRepository" private field.(ÞÔîýøÿÿÿÿ8õÄÁëå+
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´òõ®þÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ðº—µþÿÿÿÿ
+[squid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ˆÆåå+
+jsquid:UselessImportCheck"<Remove this unused import 'javax.persistence.EntityManager'.(ðàËÒýÿÿÿÿ8žüÃëå+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ðÕœ¿8¦»Åëå+
+Nsquid:S1068"2Remove this unused "todoRepository" private field.(âôÞ«8‰áÁëå+
+osquid:UselessImportCheck"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°ÝÒýÿÿÿÿ8è÷Üæå+

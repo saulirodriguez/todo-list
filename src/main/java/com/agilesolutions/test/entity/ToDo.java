@@ -1,4 +1,4 @@
-package com.agilesolutions.test.model;
+package com.agilesolutions.test.entity;
 
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
