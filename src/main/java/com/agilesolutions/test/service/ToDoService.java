@@ -65,8 +65,9 @@ public class ToDoService {
         return this.toDoRepository.save(existentTodo);
     }
 
-    public Long delete(Long id) {
-        this.toDoRepository.delete(id);
-        return id;
+    public ToDo delete(Long id) throws ResourceNotFoundException {
+        ToDo deletedTodo = this.findById(id);
+        this.toDoRepository.delete(deletedTodo);
+        return deletedTodo;
     }
 }

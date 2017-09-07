@@ -1,19 +1,15 @@
 package com.agilesolutions.test.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import java.util.ArrayList;
-import java.util.List;
 
-@Data
-@AllArgsConstructor
+@EqualsAndHashCode(callSuper=true)
 @NoArgsConstructor
 @Entity
 public class ToDo extends AbstractBaseEntity {
-    @OneToMany
-    private List<Task> tasks = new ArrayList<>();
+    public ToDo(Long id, String name, String description) {
+        super(id, name, description);
+    }
 }

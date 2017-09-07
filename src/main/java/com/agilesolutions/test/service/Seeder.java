@@ -1,32 +1,40 @@
 package com.agilesolutions.test.service;
 
+import com.agilesolutions.test.exception.ExceptionHandlingController;
+import com.agilesolutions.test.model.ToDo;
+import org.apache.log4j.Logger;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Component
 public class Seeder implements CommandLineRunner {
+    private EntityManager em;
 //    private PlayerRepository playerRepository;
 //    private CategoryRepository categoryRepository;
 //    private CategoryService categoryService;
-    private LoggerManager logger = LoggerManager.getInstance();
-
-//    public Seeder(PlayerRepository playerRepository, CategoryRepository categoryRepository, CategoryService categoryService) {
+private static final Logger LOGGER = Logger.getLogger(ExceptionHandlingController.class);
+    public Seeder(EntityManager em) {
+        this.em = em;
 //        this.playerRepository = playerRepository;
 //        this.categoryRepository = categoryRepository;
 //        this.categoryService = categoryService;
-//    }
+    }
 
     @Override
     public void run(String ...args) {
-        logger.log("Running Seeder...");
-//        String[] categoryNames = { "Attack", "Defense", "Magic", "Cooking", "Crafting"};
-//        List<Category> categories = new ArrayList<>();
-//        Arrays.stream(categoryNames)
-//                .forEach((c) -> categories.add(new Category(c.toLowerCase(), c, c + " Scores")));
+        LOGGER.info("Running Seeder...");
+//        ToDo todoList = new ToDo();
+//        todoList.setName("My Todo List");
+//        todoList.setDescription("My Todo List Description");
+//        em.getTransaction().begin();
+//        em.persist(todoList);
+//        em.getTransaction().commit();
 //
 //        List<Player> players = new ArrayList<>();
 //        for(int i = 1; i <21; i++) {
@@ -51,6 +59,6 @@ public class Seeder implements CommandLineRunner {
 //
 //        this.categoryRepository.save(categories);
 //        this.playerRepository.save(players);
-        logger.log("DONE");
+        LOGGER.info("DONE");
     }
 }

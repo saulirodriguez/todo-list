@@ -1,0 +1,2 @@
+
+Π%squid:RedundantThrowsDeclarationCheck"”Remove the declaration of thrown exception 'com.agilesolutions.test.exception.ResourceNotFoundException', as it cannot be thrown from method's body.(ίπ‚·ϊÿÿÿÿ8•½έÒε+

@@ -2,7 +2,6 @@ package com.agilesolutions.test.controller;
 
 import com.agilesolutions.test.exception.BadRequestException;
 import com.agilesolutions.test.exception.ResourceNotFoundException;
-import com.agilesolutions.test.model.AbstractBaseEntity;
 import com.agilesolutions.test.model.ToDo;
 import com.agilesolutions.test.service.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,17 +38,17 @@ public class ToDoController {
     }
 
     @PostMapping
-    public ResponseEntity<ToDo> create(@RequestBody AbstractBaseEntity toDo) throws BadRequestException {
-        return ResponseEntity.status(HttpStatus.CREATED).body(this.toDoService.save((ToDo) toDo));
+    public ResponseEntity<ToDo> create(@RequestBody ToDo toDo) throws BadRequestException {
+        return ResponseEntity.status(HttpStatus.CREATED).body(this.toDoService.save(toDo));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ToDo> update(@RequestBody AbstractBaseEntity toDo, @PathVariable Long id) throws ResourceNotFoundException {
-        return ResponseEntity.ok(this.toDoService.update(id, (ToDo) toDo));
+    public ResponseEntity<ToDo> update(@RequestBody ToDo toDo, @PathVariable Long id) throws ResourceNotFoundException {
+        return ResponseEntity.ok(this.toDoService.update(id, toDo));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Long> delete(@PathVariable Long id) {
+    public ResponseEntity<ToDo> delete(@PathVariable Long id) throws ResourceNotFoundException {
         return ResponseEntity.ok(this.toDoService.delete(id));
     }
 }
