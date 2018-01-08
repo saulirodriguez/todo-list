@@ -94,7 +94,7 @@ public class ToDoServiceTest {
     }
 
     @Test
-    public void saveShouldReturnSavedToDo() throws BadRequestException {
+    public void saveShouldReturnSavedToDo() throws BadRequestException, Exception {
         ToDo found = todoService.save(newToDo);
 
         assertThat(found).isNotNull();
@@ -103,7 +103,7 @@ public class ToDoServiceTest {
     }
 
     @Test(expected = BadRequestException.class)
-    public void saveShouldThrowsBadRequestExceptionWhenNoName() throws BadRequestException {
+    public void saveShouldThrowsBadRequestExceptionWhenNoName() throws BadRequestException, Exception {
         ToDo invalidToDo = new ToDo();
         invalidToDo.setDescription("Name is a required field");
 
@@ -111,7 +111,7 @@ public class ToDoServiceTest {
     }
 
     @Test
-    public void updateShouldReturnUpdatedToDo() throws ResourceNotFoundException {
+    public void updateShouldReturnUpdatedToDo() throws ResourceNotFoundException, Exception  {
         ToDo newValues = new ToDo();
         newValues.setName("Updated ToDo");
         newValues.setDescription("Updated");
@@ -124,7 +124,7 @@ public class ToDoServiceTest {
     }
 
     @Test(expected = ResourceNotFoundException.class)
-    public void updateShouldThrowsNotFoundExceptionWhenNoName() throws ResourceNotFoundException {
+    public void updateShouldThrowsNotFoundExceptionWhenNoName() throws ResourceNotFoundException, Exception  {
         ToDo newValues = new ToDo();
         newValues.setName("Name");
         newValues.setDescription("Description");
@@ -133,14 +133,14 @@ public class ToDoServiceTest {
     }
 
     @Test
-    public void deleteShouldCallRepositoryDelete() throws ResourceNotFoundException {
+    public void deleteShouldCallRepositoryDelete() throws ResourceNotFoundException, Exception  {
         todoService.delete((long) 1);
 
         verify(todoRepository, times(1)).delete(todos.get(0));
     }
 
     @Test(expected = ResourceNotFoundException.class)
-    public void deleteShouldThrowsNotFoundException() throws ResourceNotFoundException {
+    public void deleteShouldThrowsNotFoundException() throws ResourceNotFoundException, Exception  {
         todoService.delete((long) 10);
     }
 }

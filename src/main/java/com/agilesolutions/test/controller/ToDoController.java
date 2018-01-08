@@ -38,17 +38,17 @@ public class ToDoController {
     }
 
     @PostMapping
-    public ResponseEntity<ToDo> create(@RequestBody ToDo toDo) throws BadRequestException {
+    public ResponseEntity<ToDo> create(@RequestBody ToDo toDo) throws BadRequestException, Exception {
         return ResponseEntity.status(HttpStatus.CREATED).body(this.toDoService.save(toDo));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ToDo> update(@RequestBody ToDo toDo, @PathVariable Long id) throws ResourceNotFoundException {
+    public ResponseEntity<ToDo> update(@RequestBody ToDo toDo, @PathVariable Long id) throws ResourceNotFoundException, Exception {
         return ResponseEntity.ok(this.toDoService.update(id, toDo));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<ToDo> delete(@PathVariable Long id) throws ResourceNotFoundException {
+    public ResponseEntity<ToDo> delete(@PathVariable Long id) throws ResourceNotFoundException, Exception {
         return ResponseEntity.ok(this.toDoService.delete(id));
     }
 }

@@ -1,5 +1,6 @@
 com/agilesolutions/test/entity/ToDo.class
 com/agilesolutions/test/exception/ResourceNotFoundException.class
+com/agilesolutions/test/config/PublisherConfiguration.class
 com/agilesolutions/test/entity/Task.class
 com/agilesolutions/test/controller/TaskController.class
 com/agilesolutions/test/repository/ToDoRepository.class
@@ -12,6 +13,7 @@ com/agilesolutions/test/service/TaskService.class
 com/agilesolutions/test/controller/ToDoController.class
 com/agilesolutions/test/Application.class
 com/agilesolutions/test/exception/BadRequestException.class
+com/agilesolutions/test/service/PublisherService.class
 com/agilesolutions/test/repository/TaskRepository.class
 com/agilesolutions/test/utils/Seeder.class
 com/agilesolutions/test/service/ToDoService.class

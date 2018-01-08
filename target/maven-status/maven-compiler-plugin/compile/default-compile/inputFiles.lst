@@ -1,9 +1,11 @@
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/service/ToDoService.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/controller/ToDoController.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/service/PublisherService.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/repository/TaskRepository.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/entity/Task.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/entity/AbstractBaseEntity.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/entity/ToDo.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/config/PublisherConfiguration.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/exception/ResourceNotFoundException.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/config/RequestLoggingFilterConfig.java
 /home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/repository/ToDoRepository.java

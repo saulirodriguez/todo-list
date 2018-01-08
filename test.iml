@@ -87,5 +87,15 @@
     <orderEntry type="library" name="Maven: org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.atteo:evo-inflector:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:1.5.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.3.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:1.7.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.rabbitmq:http-client:1.1.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:4.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:1.7.3.RELEASE" level="project" />
   </component>
 </module>
