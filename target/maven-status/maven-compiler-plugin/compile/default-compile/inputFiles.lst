@@ -1,0 +1,17 @@
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/service/ToDoService.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/controller/ToDoController.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/repository/TaskRepository.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/entity/Task.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/entity/AbstractBaseEntity.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/entity/ToDo.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/exception/ResourceNotFoundException.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/config/RequestLoggingFilterConfig.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/repository/ToDoRepository.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/exception/BadRequestException.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/service/TaskService.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/exception/ExceptionHandlingController.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/exception/ExceptionResponse.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/Application.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/config/AppConfig.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/controller/TaskController.java
+/home/srodr/Documents/Development/todo-list/src/main/java/com/agilesolutions/test/utils/Seeder.java
